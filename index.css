@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.navbar-brand img {
+  height: 2rem
+}
+
+.videobg{
+  position: absolute;
+  max-width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.overlayer{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background:black;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.content{
+  position: absolute;
+  top:38%;
+  width: 100%;
+  color:white;
+  z-index: 2;
+}
+
+.content h1{
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.content h2{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  font-weight: 500;
+  padding: .5rem .8rem;
+}
