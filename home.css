@@ -6,10 +6,6 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.row{
-    margin-bottom: 10px;
-}
-
 .carousel{
   position: absolute;
   max-width: 100%;
@@ -20,15 +16,40 @@ body{
 }
 
 .showcase{
-    border-radius: 12px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.navbar-dark {
-  background: rgba(0, 0, 0, 0.6);
+.navbar {
+  background: rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
 
 .navbar-brand img {
   height: 2rem
+}
+
+.container-fluid{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlayer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 86%;
+  width: 92%;
+  text-align: center;
+  padding-top: 20%;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+
+
+.overlayer:hover{
+    opacity: 1;
 }
