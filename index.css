@@ -2,7 +2,7 @@
 
 body{
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   font-family: 'Roboto', sans-serif;
   background-color: black;
 }
