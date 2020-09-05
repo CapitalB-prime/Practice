@@ -11,7 +11,7 @@ body{
 }
 
 .carousel{
-  border-radius: 12px;
+    position: absolute;
   overflow: hidden;
 }
 
@@ -20,8 +20,8 @@ body{
     margin-bottom: 20px;
 }
 
-.navbar {
-  background: rgb(0, 0, 0);
+.navbar-dark {
+  background: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
 
