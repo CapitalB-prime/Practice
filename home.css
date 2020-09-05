@@ -4,10 +4,10 @@ body{
   overflow-x: hidden;
   overflow-y: auto;
   font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
 
 .carousel{
-  position: absolute;
   max-height: 100vh;
   height: auto;
   width: auto;
@@ -15,8 +15,17 @@ body{
 }
 
 .showcase{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    border-radius: 0.5rem;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.tag:hover .showcase{
+    opacity: 0.3;
 }
 
 .navbar {
@@ -28,27 +37,33 @@ body{
   height: 2rem
 }
 
-.container-fluid{
-    background-color: rgba(0, 0, 0, 0.8);
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
 }
 
-.overlayer{
+.container{
+    margin-top: 40px;
+}
+
+
+.ctr{
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
-  font-weight: 700;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 86%;
-  width: 92%;
-  text-align: center;
-  padding-top: 20%;
-  opacity: 0;
-  transition: 0.5s opacity;
+  -ms-transform: translate(-50%, -50%)
 }
 
-
-.overlayer:hover{
+.tag:hover .ctr{
     opacity: 1;
+    background-color: #616060;
+    color: white;
+    font-size: 16px;
+    padding: 3% 6%;
 }
